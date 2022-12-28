@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Canvas</title>
+<script type="text/javascript">
+function rysuj() {
+var rysowanie = document.getElementById('obrazek');
+var rodzaj = rysowanie.getContext('2d');
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(100,75,150,90); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*lewy górny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(200,75,150,90); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*prawy górny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(200,175,150,160); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke(); /*prawy dolny*/
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(100,175,150,160); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*lewy dolny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(200,80,185,125); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*prawy prawy górny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(200,170,185,125); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*prawy prawy dolny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(100,168,115,125); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*lewy lewy dolny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.moveTo(150,125);
+rodzaj.quadraticCurveTo(100,80,115,125); /*x i y gornego oraz x i y prawego*/
+rodzaj.closePath();
+rodzaj.strokeStyle = "green";  /*lewy lewy górny*/
+rodzaj.fillStyle='green';
+rodzaj.fill();
+rodzaj.stroke();
+}
+</script>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="600" height="600">
+Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+</canvas>
+</body>
+</html>

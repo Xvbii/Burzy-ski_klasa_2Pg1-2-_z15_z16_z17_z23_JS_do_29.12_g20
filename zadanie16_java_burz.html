@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Canvas</title>
+<script type="text/javascript">
+function rysuj() {
+var rysowanie = document.getElementById('obrazek');
+var rodzaj = rysowanie.getContext('2d');
+
+
+rodzaj.beginPath();
+rodzaj.arc(193,100,50,Math.PI,0,true);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "blue";
+rodzaj.stroke();
+
+rodzaj.beginPath( );
+rodzaj.arc(250,150,50,Math.PI,0,true);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "gold";
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.arc(419,100,50,0*Math.PI,0.7*Math.PI,true);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "red";
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.arc(364,150,50,0*Math.PI,1.3*Math.PI,true);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "lime";
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.arc(306,100,50,0*Math.PI,0.7*Math.PI,true);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "black";
+rodzaj.stroke();
+
+rodzaj.beginPath( );
+rodzaj.arc(250,150,50,Math.PI,1,false);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "gold";
+rodzaj.stroke()
+
+rodzaj.beginPath();
+rodzaj.arc(306,100,50,0*Math.PI,0.8*Math.PI,false);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "black";
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.arc(364,150,50,0*Math.PI,1.3*Math.PI,false);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "lime";
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.arc(419,100,50,0*Math.PI,0.8*Math.PI,false);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "red";
+rodzaj.stroke();
+
+rodzaj.beginPath();
+rodzaj.arc(193,100,50,Math.PI,1,false);
+rodzaj.lineWidth = 12;
+rodzaj.strokeStyle = "blue";
+rodzaj.stroke();
+
+}
+</script>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="1000" height="1000">
+Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+</canvas>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Canvas</title>
+<script type="text/javascript">
+function rysuj() {
+var rysowanie = document.getElementById('obrazek');
+var rodzaj = rysowanie.getContext('2d');
+rodzaj.fillStyle = 'yellow';
+rodzaj.fillRect(0, 0, 100, 100);
+rodzaj.strokeRect(0, 0, 100, 100);
+rodzaj.fillStyle = 'red';
+rodzaj.fillRect(30, 30, 30, 30);
+rodzaj.beginPath();
+rodzaj.moveTo(210,416);  /*gorna czesc lewego rogu?*/
+rodzaj.lineTo(260,366);  /* gorny rog*/
+rodzaj.lineTo(310,416); /*prawy rog*/
+rodzaj.lineTo(260,466); /*dolny rog*/
+rodzaj.lineTo(210,416);  /*dolna czesc lewego rogu*/
+rodzaj.fillStyle = 'green';
+rodzaj.fill();
+}
+</script>
+</head>
+<body onload="rysuj();">
+<canvas id="obrazek" width="600" height="600">
+Twoja przeglądarka nie wspiera Canvas!
+Zainstaluj Internet Explorer 9.x
+</canvas>
+</body>
+</html>
